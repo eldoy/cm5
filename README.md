@@ -16,7 +16,7 @@ var editor = require('editor')
 
 Include it on the page and run it:
 
-```
+```html
 <textarea id="editor"></textarea>
 <script>
   window.editor =${editor}
