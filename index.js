@@ -4,14 +4,17 @@ module.exports = function cm5(opt = {}) {
     el = q(el)
   }
   if (!el) return
+  if (typeof opt.mode == 'string') {
+    opt.mode = { name: opt.mode }
+  }
   if (!opt.mode || opt.mode == 'js') {
     opt.mode = 'javascript'
   }
   if (opt.mode == 'html') {
     opt.mode == 'htmlmixed'
   }
-  if (typeof opt.mode == 'string') {
-    opt.mode = { name: opt.mode }
+  if (opt.mode == 'md') {
+    opt.mode == 'markdown'
   }
   var options = {
     theme: 'default',
