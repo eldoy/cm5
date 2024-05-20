@@ -1,4 +1,4 @@
-module.exports = function editor(opt = {}) {
+module.exports = function cm5(opt = {}) {
   var el = opt.el || '#editor'
   if (typeof el == 'string') {
     el = q(el)
@@ -41,4 +41,6 @@ module.exports = function editor(opt = {}) {
     el.value = editor.getValue()
   })
   el.editor = editor
+
+  return editor
 }

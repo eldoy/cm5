@@ -11,7 +11,7 @@ npm i https://github.com/eldoy/cm5.git
 
 Require the editor:
 ```js
-var editor = require('cm5')
+var cm5 = require('cm5')
 ```
 
 Include it on the page and run it:
@@ -19,8 +19,8 @@ Include it on the page and run it:
 ```html
 <textarea id="editor"></textarea>
 <script>
-  window.editor =${editor}
-  editor()
+  window.cm5 =${cm5}
+  window.editor = cm5({ el: '#editor', mode: 'js' })
 </script>
 ```
 
