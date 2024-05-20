@@ -23,3 +23,5 @@ run(`cp app/assets/scss/editor.scss ${appdir}/app/assets/scss`)
 run(`cat app/config/assets.yml`)
 
 console.log(`\n\nManually copy the assets into app/config/assets.yml\n`)
+
+console.log(`\nAdd "@import 'editor.scss';" to the bottom of app.scss\n`)
