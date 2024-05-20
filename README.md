@@ -21,6 +21,9 @@ Include it on the page and run it:
 <script>
   window.cm5 =${cm5}
   window.editor = cm5({ el: '#editor', mode: 'js' })
+
+  // Autofocus
+  window.editor.focus()
 </script>
 ```
 
