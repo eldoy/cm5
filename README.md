@@ -11,7 +11,7 @@ npm i https://github.com/eldoy/cm5.git
 
 Require the editor:
 ```js
-var editor = require('editor')
+var editor = require('cm5')
 ```
 
 Include it on the page and run it:
